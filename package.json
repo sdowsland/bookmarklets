@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "A repo to contain useful bookmarklets to speed up repetitive tasks and provide shortcuts",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdowsland/bookmarklets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdowsland/bookmarklets/issues"
+  },
+  "homepage": "https://github.com/sdowsland/bookmarklets#readme",
+  "dependencies": {
+    "bookmarklet": "^1.0.1"
+  }
+}
