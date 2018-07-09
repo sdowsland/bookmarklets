@@ -1,9 +1,11 @@
 // This code assumes:
 //   1.  jQuery is installed
-//   2.  the theme is using body_class() in the body tag e.g. <body <?php body_class(); ?>>
+//   2.  The theme is using wp_head()
+//   3.  The theme is using body_class() in the body tag e.g. <body <?php body_class(); ?>>
 
-jQuery.get("/wp-json/", function(sitedata){
-console.log(sitedata);
+var API_URL = jQuery("link[rel='https://api.w.org/']").attr("href");
+
+jQuery.get(API_URL, function(sitedata){
 var classList = document.getElementsByTagName("body")[0].classList;
 
 var postId = null;
@@ -19,6 +21,7 @@ classList.forEach(function(item){
 });
 
 if (url){
+  // console.log(url)
   window.location = url;
 }
 
