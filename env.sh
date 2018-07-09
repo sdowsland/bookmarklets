@@ -1,0 +1,1 @@
+docker run --rm -it -v ${PWD}:/usr/local/app -w /usr/local/app node:8 bash
